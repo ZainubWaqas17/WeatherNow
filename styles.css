@@ -1,0 +1,62 @@
+body {
+    background-color: #f8f9fa;
+}
+.navbar {
+    background-color: #435D95; 
+}
+.navbar .navbar-brand, 
+.navbar-nav .nav-link {
+    color: white !important; 
+}
+.navbar-nav .nav-link {
+    margin-left: 20px;
+}
+.navbar .navbar-brand:hover, 
+.navbar-nav .nav-link:hover {
+    color: #d1ecf1 !important;
+}
+.navbar-brand i {
+    margin-right: 10px;
+}
+.hero {
+    background: url("https://thisoldprepper.com/wp-content/uploads/2019/12/Clouds-moving.gif") no-repeat center center;
+    background-size: cover;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    color: white;
+}
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.2); 
+}
+.hero h1, .hero p {
+    position: relative;
+    z-index: 1; /* Ensures text is above the overlay */
+}
+.hero h1 {
+    font-size: 3rem; /* Larger heading */
+    font-weight: bold; /* Bold heading */
+    margin-bottom: 20px;
+}
+.hero p {
+    font-size: 1.5rem; /* Larger paragraph */
+    font-weight: 300;
+}
+footer {
+    background-color: #435D95;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
